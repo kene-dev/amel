@@ -1,9 +1,9 @@
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { FaArrowLeft } from "react-icons/fa";
 import akpan from "../assets/png/akpan.png";
 
 const AboutProfile = () => {
-    const {id} = useParams()
+    // const {id} = useParams()
   return (
     <div className='w-full min-h-full lg:px-8 px-5'>
         {/* BACK BUTTON  */}

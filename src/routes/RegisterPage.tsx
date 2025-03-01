@@ -1,8 +1,7 @@
-import { useState, FormEvent, useEffect } from 'react';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '../components';
-import { useDispatch } from 'react-redux';
 
 // FORM VALIDATION IMPORTS
 import { useForm, SubmitHandler } from "react-hook-form";

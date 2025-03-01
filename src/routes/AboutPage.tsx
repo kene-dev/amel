@@ -144,7 +144,7 @@ function AboutPage() {
                     <div className='w-full lg:flex items-start my-10  '>
                         <div className='hidden lg:flex w-[300px]'></div>
                         <div className='flex-1 flex flex-wrap items-start gap-6'>
-                            {[1,2,3,4].map((item, index) => (
+                            {[1,2,3,4].map((_, index) => (
                                 <Link to={`/about/${index + 1}`} key={index} className=' w-full lg:w-[287px] h-[420px] rounded-3xl'>
                                     <img src={akpan} className='w-full h-[330px] rounded-2xl object-cover aspect-auto'/>
                                     <h1 className='text-xl font-semibold mt-2 flex-1'>Akan Peter Nsek</h1>

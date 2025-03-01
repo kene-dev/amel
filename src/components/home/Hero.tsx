@@ -4,13 +4,7 @@ import heroImage from '../../assets/webp/hero_image.webp';
 import icing from '../../assets/webp/Icing_sugar.webp';
 import coco from '../../assets/svgs/coco.svg';
 import point from '../../assets/svgs/point.svg';
-import bananaImage from '../../assets/png/banana.png';
-import milkImage from '../../assets/webp/milk.webp';
-import vanillaImage from '../../assets/webp/vanilla.webp';
-import CustomArrow from '../CustomArrow';
-import FlavorsContainer from './FlavorsContainer';
 import { Link } from 'react-router-dom';
-import {  FaCircleArrowLeft } from "react-icons/fa6";
 import { useEffect, useState } from 'react';
 interface Slide {
     title1: string;

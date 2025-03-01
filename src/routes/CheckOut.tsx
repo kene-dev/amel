@@ -27,7 +27,7 @@ function CheckOut() {
     const {data} = useGetSingleUserQuery()
     const [updateUser] = useUpdateUserMutation()
     const [createOrder, {isLoading, isSuccess}] = useCreateOrderMutation()
-    const [checkCoupoon, {isLoading: loadingCoupon, isSuccess: couponSuccess}] = useCheckCouponMutation()
+    const [checkCoupoon, {isLoading: loadingCoupon,}] = useCheckCouponMutation()
     const [couponCode, setCouponCode] = useState<string>('')
     const [discountedAmount, setDiscountedAmount] = useState<number>()
     const cartProducts = useSelector((state: RootState) => state.cart.cartItems);

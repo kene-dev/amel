@@ -10,13 +10,13 @@ const authApiSlice = apiSlice.injectEndpoints({
               method: 'POST',
               body: { ...data },
             }),
-            async onQueryStarted(args, { dispatch, queryFulfilled }) {
+            async onQueryStarted(_args, { dispatch, queryFulfilled }) {
               try {
                 const { data } = await queryFulfilled;
                 // Store tokens in Redux on successful login
                 dispatch(setCredentials({ access_token: data.access_token, refresh_token: data.refresh_token }));
               } catch (err) {
-                console.error('Login failed:', err);
+                console.error('Login failed:', err,);
               }
             },
           }),

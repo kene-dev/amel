@@ -1,6 +1,5 @@
 import { FaSearch } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { useDispatch} from 'react-redux';
 import { useGetCategoriesQuery } from '../../features/filter/filterSlice';
 import PriceRangeSlider from './RangeSlider';
 
@@ -12,7 +11,6 @@ type FilterProps = {
 }
 
 function MobileFilter({handleCategorySelect, selectedCategory, handlePriceChange, handleReset} : FilterProps) {
-    const dispatch = useDispatch();
      const {data} = useGetCategoriesQuery();
     // const { filterState } = useSelector((state: RootState) => state.products);
     // const categories = useSelector((state: RootState) => {

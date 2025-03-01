@@ -1,7 +1,4 @@
 import bgImage from '../../assets/webp/home_about_us_bg.webp';
-import image from '../../assets/webp/female_dp.webp';
-import AvatarContainer from '../AvatarContainer';
-import Logo from '../Logo';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import logo from '../../assets/svgs/logo.svg';
