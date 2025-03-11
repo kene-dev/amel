@@ -2,8 +2,8 @@ import { FaCircleArrowRight } from 'react-icons/fa6';
 import { FaLinkedin } from "react-icons/fa";
 import { DownloadIcon, HeroContainer } from '../components';
 import { motion } from 'framer-motion';
-import akpan from "../assets/png/akpan.png";
 import { Link } from 'react-router-dom';
+import { teamData } from '@/utils/storeLocationData';
 
 function AboutPage() {
     return (
@@ -23,6 +23,7 @@ function AboutPage() {
                     buttonLabel={
                         <p className='flex items-center gap-2 font-semibold '>
                             <DownloadIcon /> Download our brochure
+                        
                         </p>
                     }
                 />
@@ -144,11 +145,11 @@ function AboutPage() {
                     <div className='w-full lg:flex items-start my-10  '>
                         <div className='hidden lg:flex w-[300px]'></div>
                         <div className='flex-1 flex flex-wrap items-start gap-6'>
-                            {[1,2,3,4].map((_, index) => (
+                            {teamData.map((item, index) => (
                                 <Link to={`/about/${index + 1}`} key={index} className=' w-full lg:w-[287px] h-[420px] rounded-3xl'>
-                                    <img src={akpan} className='w-full h-[330px] rounded-2xl object-cover aspect-auto'/>
-                                    <h1 className='text-xl font-semibold mt-2 flex-1'>Akan Peter Nsek</h1>
-                                    <p className='text-xs text-[#121212]/70 pr-4'>Managing Director / CEO</p>
+                                    <img src={item.image} className='w-full h-[330px] rounded-2xl object-cover aspect-auto'/>
+                                    <h1 className='text-xl font-semibold mt-2 flex-1'>{item.name}</h1>
+                                    <p className='text-xs text-[#121212]/70 pr-4'>{item.title}</p>
                                     <FaLinkedin className='w-6 h-6 text-blue-500 mt-1 rounded-lg' />
                                 </Link>
                             ))}

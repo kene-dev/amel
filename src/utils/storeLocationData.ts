@@ -8,6 +8,19 @@ import product7 from "../assets/webp/custard.webp";
 import product8 from "../assets/webp/milk_custard_powder.webp";
 import product9 from "../assets/webp/corn_flour.webp";
 
+import ceo from '../assets/team/peter.jpeg';
+import azeez from  '../assets/team/azeez.jpeg';
+import joe from  '../assets/team/joe.jpeg';
+import sunny from  '../assets/team/sunny.jpeg';
+import eniola from  '../assets/team/eniola.jpeg';
+import oluyemi from  '../assets/team/oluyemi.jpeg';
+import samson from  '../assets/team/samson.jpeg';
+import fleet from  '../assets/team/fleet.jpeg';
+import pete from  '../assets/team/pete.jpeg';
+import segun from  '../assets/team/segun.jpeg';
+import adu from  '../assets/team/adu.jpeg';
+import chinedu from  '../assets/team/chinedu.jpeg';
+
 // type productCatType =  {
 //     id:number,
 //     image:string,
@@ -513,5 +526,68 @@ export const productCatalogue = [
         description:" Elevate your culinary creations with our Premium Amel Susan Corn Flour, a versatile and essential ingredient for every kitchen. Made from high-quality, non-GMO corn, our corn flour is finely milled to perfection, ensuring a smooth and consistent texture that's perfect for a wide range of recipes.",
         keyFeatures:"Exceptional Quality: Our Premium Corn Flour is sourced from the finest non-GMO corn, carefully selected to deliver superior taste and texture to your dishes.Smooth Texture: Milled to a fine consistency, this corn flour effortlessly blends into your recipes, ensuring a smooth texture and preventing any unwanted grittiness. Versatile Ingredient: Whether you're baking, cooking, or thickening sauces, our corn flour is a go-to ingredient that adds depth and flavor to your creations, It's perfect for making tortillas, cornbread, coatings for fried foods, and more. Gluten-Free Option: Our corn flour is naturally gluten-free, making it an excellent choice for those with dietary restrictions or looking to explore gluten-free cooking. Nutritious and Wholesome: Packed with essential nutrients and dietary fiber, our corn flour not only enhances the taste of your dishes but also contributes to a balanced diet. Resealable Packaging: Our corn flour comes in a convenient resealable bag, ensuring its freshness and extending its shelf life",
         usageTips:'Use it to make perfectly fluffy and flavorful cornbread that\'s sure to impress your guests. Add it to your pancake and waffle mix for a delightful twist on breakfast classics.Create a crispy coating for fried chicken, fish, or vegetables by combining corn flour with your favorite seasonings.Thicken soups, stews, and sauces with our corn flour to achieve the desired consistency and enhance flavors.'
+    },
+]
+
+export const teamData = [
+    {
+        name:'Akan Peter Nsek',
+        image: ceo,
+        title:'Managing Director/CEO',
+    },
+    {
+        name:'Azeez Temilade M',
+        image: azeez,
+        title:'Executive Director, Operations',
+    },
+    {
+        name:'Joe Nsek',
+        image: joe,
+        title:'Chairman',
+    },
+    {
+        name:'Sunny Ireko Isele',
+        image: sunny,
+        title:'General manager',
+    },
+    {
+        name:'Eniola Olabanji',
+        image: eniola,
+        title:'Head of Accounts',
+    },
+    {
+        name:'Omoniyi Oluyemi',
+        image: oluyemi,
+        title:'Production manager',
+    },
+    {
+        name:'Samson Ogunbamike',
+        image: samson,
+        title:'Quality Control Manager',
+    },
+    {
+        name:'...',
+        image: fleet,
+        title:'Fleet & Logistics Manager',
+    },
+    {
+        name:'Peter Adeshina',
+        image: pete,
+        title:'Warehouse Manager',
+    },
+    {
+        name:'Segun Eshorun',
+        image: segun,
+        title:'Human Resources Manager',
+    },
+    {
+        name:'Adu adedapo',
+        image: adu,
+        title:'Mechanical Engineer',
+    },
+    {
+        name:'Chinedu Ofia',
+        image: chinedu,
+        title:'Finished Goods Store Manager',
     },
 ]

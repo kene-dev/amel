@@ -12,8 +12,8 @@ export const links = [
         name: 'distributors'
     },
     {
-        path: 'shop',
-        name: 'shop'
+        path: 'product-catalogue',
+        name: 'Products'
     },
     {
         path: 'our-community',

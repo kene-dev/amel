@@ -51,19 +51,19 @@ function Footer() {
                 <p className='order-2 md:order-1 text-just-gray text-sm md:text-base'>Copyright 2024 Amel International Services Limited. All rights reserved.</p>
                 <div className='flex items-center  gap-2 order-1 md:order-2'>
                     <Link to=''>
-                        <RiFacebookFill fill='#2B2A29B2' size={20} />
+                        <RiFacebookFill fill='#2B2A29B2' size={25} />
                     </Link>
                     <Link to=''>
-                        <FaTiktok fill='#2B2A29B2' size={20} />
+                        <FaTiktok fill='#2B2A29B2' size={25} />
                     </Link>
                     <Link to=''>
-                        <RiLinkedinBoxFill fill='#2B2A29B2' size={20} />
+                        <RiLinkedinBoxFill fill='#2B2A29B2' size={25} />
                     </Link>
                     <Link to=''>
-                        <RiTwitterXLine fill='#2B2A29B2' size={20} />
+                        <RiTwitterXLine fill='#2B2A29B2' size={25} />
                     </Link>
                     <Link to=''>
-                        <RiInstagramLine fill='#2B2A29B2' size={20} />
+                        <RiInstagramLine fill='#2B2A29B2' size={25} />
                     </Link>
                 </div>
             </section>
