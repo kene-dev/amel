@@ -51,49 +51,13 @@ const Hero = () => {
         }, []);
     return  (
         <section className='relative w-full h-[600px] overflow-hidden flex flex-col items-center justify-center xl:flex-row bg-milk'>
-            {/* <div className='order-2 xl:order-1 flex  items-center justify-center'>
-                <div className='md:flex xl:block py-6 xl:py-0 gap-6 justify-between  space-y-2 xl:space-y-3 '>
-                    <div className='md:space-y-2 xl:space-y-3 '>
-                        <h1 className='font-varela text-2xl md:text-3xl xl:text-5xl font-extrabold tracking-wide'>Shop Our Amel Susan </h1>
-                        <h1 className='font-varela text-2xl md:text-3xl xl:text-5xl font-bold tracking-wide'>Products Today </h1>
-                        <p className='text-just-gray text-lg md:text-xl max-w-sm'>From Breakfast to Baking Products! We’ve got you covered.</p>
-                        <CustomArrow />
-                    </div>
-                    <div className='flex items-center'>
-                        <Link to='shop'>
-                            <motion.button
-                                whileHover={{
-                                    scale: 1.05,
-                                    boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.2)',
-                                    transition: { type: 'spring', stiffness: 300, damping: 15, duration: 0.3 }
-                                }}
-                                whileTap={{ scale: 0.95 }}
-                                className='bg-black  py-2 md:py-3 px-4 md:px-6 rounded-xl tracking-wide text-lg text-white font-medium flex justify-between items-center gap-2'>
-                                <FaCircleArrowRight fill='#FDC900' size={24} />
-                                Go to shop
-                            </motion.button>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-            <div className='order-1 xl:order-2 flex justify-center'>
-                <motion.div className='w-1/2 xl:w-auto ' initial={{ rotate: 25 }} animate={{ rotate: 0 }} transition={{ duration: 1 }}>
-                    <img src={heroImage} />
-                </motion.div>
-                <div className='flex flex-col gap-4 xl:gap-8 h-fit mt-10 md:mt-20 xl:mt-28'>
-                    <FlavorsContainer color='green' alt='banana' text='banana flavour' image={bananaImage} />
-                    <FlavorsContainer color='blue' alt='vanilla' text='vanilla flavour' image={vanillaImage} />
-                    <FlavorsContainer color='yellow' alt='milk' text='milk flavour' image={milkImage} />
-                </div>
-            </div> */}
-
               {/* Carousel Container */}
             <div className="w-full h-full flex items-center justify-center px-8 overflow-hidden">
                 {slides.map((slide, index) => (
                 <motion.div
                     key={index}
                     initial={{ opacity: 0, x: 50 }}
-                    animate={index === currentSlide ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
                     className={`absolute w-full flex flex-col xl:flex-row items-center gap-4 lg:max-w-screen-xl 2xl:max-w-screen-2xl ${
                     index === currentSlide ? "block" : "hidden"
@@ -128,12 +92,12 @@ const Hero = () => {
                     {/* Right Image */}
                     <motion.div
                     initial={{ scale: 0.7,opacity: 0}}
-                    whileInView={{ opacity: 1, scale: 1, x: index === 1 ? 90 : 0}}
+                    whileInView={{ opacity: 1, scale: 1, x: 0}}
                     transition={{ duration: 0.8, ease: 'linear' }}
                     viewport={{ once: false, amount: 0.2 }}
                     className="w-1/2 xl:w-auto"
                     >
-                        <img src={slide.image} alt="Hero" className={`rounded-lg ${index === 1 ? 'w-[270px] -rotate-12 ml-9' : 'xl:max-w-md'} `} />
+                        <img src={slide.image} alt="Hero" className={`rounded-lg ${index === 1 ? 'w-[270px] -rotate-12' : 'xl:max-w-md'} `} />
                     </motion.div>
                 </motion.div>
                 ))}

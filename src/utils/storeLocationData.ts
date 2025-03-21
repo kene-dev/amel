@@ -566,7 +566,7 @@ export const teamData = [
         title:'Quality Control Manager',
     },
     {
-        name:'...',
+        name:'Rasheed Oganla',
         image: fleet,
         title:'Fleet & Logistics Manager',
     },
