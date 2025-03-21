@@ -17,7 +17,7 @@ function Distributors() {
                  <Link to='distributors'>
                     <Button theme='red' text='Find a dealer near you' />
                  </Link>
-                <div className='flex flex-col text-center w-[219px] mt-2'>
+                <div className='flex flex-col text-center lg:w-[219px] w-full mt-2'>
                     <p className='text-xs'>Or</p>
                     <h1 onClick={() => setOpenModal(!openModal)} className='underline text-lg cursor-pointer'>Become a Dealer</h1>
                 </div>

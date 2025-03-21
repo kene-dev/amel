@@ -6,7 +6,7 @@ interface ProductCardProps {
 }
 function ProductCatalogueCard({ id, image, name, }: ProductCardProps) {
     return (
-        <article className='w-[271px]'>
+        <article className='lg:w-[271px] w-full'>
             <div className='relative w-[100%] lg:w-[270px] h-auto mb-3 rounded-2xl '>
                 <div className='relative rounded-b-2xl flex justify-center items-center'>
                     <Link to={`/product-catalogue/${id}`}>

@@ -97,7 +97,7 @@ const Hero = () => {
                     viewport={{ once: false, amount: 0.2 }}
                     className="w-1/2 xl:w-auto"
                     >
-                        <img src={slide.image} alt="Hero" className={`rounded-lg ${index === 1 ? 'w-[270px] -rotate-12' : 'xl:max-w-md'} `} />
+                        <img src={slide.image} alt="Hero" className={`rounded-lg ${index === 1 ? 'w-[270px] -rotate-12 ml-9' : 'xl:max-w-md'} `} />
                     </motion.div>
                 </motion.div>
                 ))}

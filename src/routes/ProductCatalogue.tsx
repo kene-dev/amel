@@ -3,7 +3,7 @@ import { productCatalogue } from '@/utils/storeLocationData';
 
 const ProductCatalogue = () => {
   return (
-    <div className='w-full lg:px-8'>
+    <div className='w-full lg:px-8 px-5'>
         <h1 className='my-4 mt-20 text-[24px] font-semibold'>Product Catalogue</h1>
         <div className='w-full flex flex-wrap items-center gap-20 my-10 lg:max-w-screen-xl xl:max-w-screen-2xl mx-auto'>
             {productCatalogue.map((product) => (
