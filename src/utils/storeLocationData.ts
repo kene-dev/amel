@@ -531,63 +531,77 @@ export const productCatalogue = [
 
 export const teamData = [
     {
+        name:'Joe Nsek',
+        image: joe,
+        title:'Chairman',
+        linkedIn:"https://www.linkedin.com/in/joe-nsek-294b24292/"
+    },
+    {
         name:'Akan Peter Nsek',
         image: ceo,
         title:'Managing Director/CEO',
+        linkedIn:"https://www.linkedin.com/in/akanpeternsek/"
     },
     {
         name:'Azeez Temilade M',
         image: azeez,
         title:'Executive Director, Operations',
+        linkedIn:"#"
     },
-    {
-        name:'Joe Nsek',
-        image: joe,
-        title:'Chairman',
-    },
+    
     {
         name:'Sunny Ireko Isele',
         image: sunny,
         title:'General manager',
+        linkedIn:"https://www.linkedin.com/in/sunny-ireko-a96ba9259/"
     },
     {
         name:'Eniola Olabanji',
         image: eniola,
         title:'Head of Accounts',
-    },
-    {
-        name:'Omoniyi Oluyemi',
-        image: oluyemi,
-        title:'Production manager',
-    },
-    {
-        name:'Samson Ogunbamike',
-        image: samson,
-        title:'Quality Control Manager',
-    },
-    {
-        name:'Rasheed Oganla',
-        image: fleet,
-        title:'Fleet & Logistics Manager',
-    },
-    {
-        name:'Peter Adeshina',
-        image: pete,
-        title:'Warehouse Manager',
+        linkedIn:"#"
     },
     {
         name:'Segun Eshorun',
         image: segun,
         title:'Human Resources Manager',
+        linkedIn:"https://www.linkedin.com/in/seguneshorun/"
     },
+    {
+        name:'Omoniyi Oluyemi',
+        image: oluyemi,
+        title:'Production manager',
+        linkedIn:"https://www.linkedin.com/in/omoniyi-oluyemi-996a4bb6/"
+    },
+    {
+        name:'Samson Ogunbamike',
+        image: samson,
+        title:'Quality Control Manager',
+         linkedIn:"https://www.linkedin.com/in/osm2b423291/"
+    },
+    {
+        name:'Rasheed Oganla',
+        image: fleet,
+        title:'Fleet & Logistics Manager',
+         linkedIn:"https://www.linkedin.com/in/rasheed-oganla-974b7784/"
+    },
+    {
+        name:'Peter Adeshina',
+        image: pete,
+        title:'Warehouse Manager',
+         linkedIn:"https://www.linkedin.com/in/peter-adesina-6213b913b/"
+    },
+   
     {
         name:'Adu adedapo',
         image: adu,
         title:'Mechanical Engineer',
+         linkedIn:"https://www.linkedin.com/in/adedapo-adu-3baa0a141/"
     },
     {
         name:'Chinedu Ofia',
         image: chinedu,
         title:'Finished Goods Store Manager',
+        linkedIn:"https://www.linkedin.com/in/chinedu-ofia-a61a1114b/"
     },
 ]

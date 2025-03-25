@@ -27,7 +27,7 @@ function Products() {
                         <p className='font-semibold text-xl md:text-3xl xl:text-4xl'>Breakfast</p>
                         <p className='font-semibold text-xl md:text-3xl xl:text-4xl'>Products</p>
                         <Link to='product-catalogue'>
-                            <Button theme='red' />
+                            <Button theme='red' text='Learn More' />
                         </Link>
                     </div>
                     <div className='order-1 xl:order-2 flex md:block justify-center'>
@@ -47,7 +47,7 @@ function Products() {
                         <p className='font-semibold text-xl md:text-3xl xl:text-4xl'>Baking</p>
                         <p className='font-semibold text-xl md:text-3xl xl:text-4xl'>Products</p>
                         <Link to='product-catalogue'>
-                            <Button theme='yellow' />
+                            <Button theme='yellow' text='Learn More' />
                         </Link>
                     </div>
                     <div className='order-1 xl:order-2 flex md:block justify-center'>

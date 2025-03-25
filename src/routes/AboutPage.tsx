@@ -4,6 +4,7 @@ import { DownloadIcon, HeroContainer } from '../components';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { teamData } from '@/utils/storeLocationData';
+import aboutBanner from '../assets/svgs/aboutBanner.svg';
 
 function AboutPage() {
     return (
@@ -18,14 +19,16 @@ function AboutPage() {
                 <HeroContainer
                     theme='red'
                     title='About us'
-                    subHeading='Amel International Services'
-                    content='We are Nigeria’s foremost baking ingredients and breakfast cereals brand AMEL SUSAN, offering you quality products always… AMEL International Services Ltd, RC 1190152 is a wholly indigenous company dedicated to the sustainable production and packaging of high-quality foods and beverages. '
+                    subHeading='Amel International Services Limited'
+                    content='We are Nigeria’s foremost baking ingredients and breakfast cereals brand  AMEL SUSAN, offering you quality products always… AMEL International Services Ltd, RC 1190152 is a wholly indigenous company dedicated to the sustainable production and packaging of high-quality foods and beverages.  '
                     buttonLabel={
                         <p className='flex items-center gap-2 font-semibold '>
                             <DownloadIcon /> Download our brochure
                         
                         </p>
                     }
+                    imageSrc={aboutBanner}
+
                 />
             </motion.div>
 
@@ -146,12 +149,14 @@ function AboutPage() {
                         <div className='hidden lg:flex w-[300px]'></div>
                         <div className='flex-1 flex flex-wrap items-start gap-6'>
                             {teamData.map((item, index) => (
-                                <Link to={`/about/${index + 1}`} key={index} className=' w-full lg:w-[287px] h-[420px] rounded-3xl'>
+                                <div  key={index} className=' w-full lg:w-[287px] h-[420px] rounded-3xl'>
                                     <img src={item.image} className='w-full h-[330px] rounded-2xl object-cover aspect-auto'/>
                                     <h1 className='text-xl font-semibold mt-2 flex-1'>{item.name}</h1>
                                     <p className='text-xs text-[#121212]/70 pr-4'>{item.title}</p>
-                                    <FaLinkedin className='w-6 h-6 text-blue-500 mt-1 rounded-lg' />
-                                </Link>
+                                    <Link to={item.linkedIn}>
+                                        <FaLinkedin className='w-6 h-6 text-blue-500 mt-1 rounded-lg' />
+                                    </Link>
+                                </div>
                             ))}
                         </div>
                     </div>

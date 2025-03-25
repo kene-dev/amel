@@ -28,9 +28,8 @@ function Modal({action}:ModalProps) {
                 aria-label="Select an option"
                 >
                 <option value="" disabled hidden>Select an option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">Breakfast Products</option>
+                <option value="2">Baking Products</option>
               </select>
               <div className="pointer-events-none absolute top-9 right-0 h-max flex items-center justify-center px-3">
                 <MdKeyboardArrowDown className="w-7 h-7 text-gray-400" />

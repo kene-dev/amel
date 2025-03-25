@@ -50,19 +50,17 @@ function Footer() {
             <section className='flex flex-col gap-2 md:gap-0 md:flex-row md:justify-between pt-4'>
                 <p className='order-2 md:order-1 text-just-gray text-sm md:text-base'>Copyright 2024 Amel International Services Limited. All rights reserved.</p>
                 <div className='flex items-center  gap-2 order-1 md:order-2'>
-                    <Link to=''>
+                    <Link to='https://www.facebook.com/amelsusanbreakfast'>
                         <RiFacebookFill fill='#2B2A29B2' size={25} />
                     </Link>
-                    <Link to=''>
+                    <Link to='https://www.tiktok.com/@amelsusan.products?_t=ZM-8uxToeluxKI&_r=1'>
                         <FaTiktok fill='#2B2A29B2' size={25} />
                     </Link>
-                    <Link to=''>
+                    <Link to='https://www.linkedin.com/company/amel-international-services-limited/'>
                         <RiLinkedinBoxFill fill='#2B2A29B2' size={25} />
                     </Link>
-                    <Link to=''>
-                        <RiTwitterXLine fill='#2B2A29B2' size={25} />
-                    </Link>
-                    <Link to=''>
+                 
+                    <Link to='https://www.instagram.com/amelsusanbaking/'>
                         <RiInstagramLine fill='#2B2A29B2' size={25} />
                     </Link>
                 </div>

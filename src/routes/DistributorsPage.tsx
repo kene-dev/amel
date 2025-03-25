@@ -1,5 +1,6 @@
 import { HeroContainer } from '../components';
 import image from '../assets/svgs/dark-map.svg';
+import bannerImage from '../assets/svgs/distributors.svg';
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import {
@@ -31,6 +32,7 @@ function DistributorsPage() {
                     content='From bustling urban centers to serene rural areas, our goal is to make our nutritious cereals and baking ingredients accessible to every Nigerian household.'
                     buttonLabel={<p className='font-semibold'>Become a Distributor</p>}
                     action={setOpenModal}
+                    imageSrc={bannerImage}
                 />
             </motion.div>
 

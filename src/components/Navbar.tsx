@@ -1,7 +1,7 @@
 import Logo from './Logo';
 import { links } from '../utils/links';
 import { Link, NavLink } from 'react-router-dom';
-import SearchBar from './SearchBar';
+
 import AvatarContainer from './AvatarContainer';
 import image from '../assets/webp/female_dp.webp';
 import { RiSearchLine } from 'react-icons/ri';
@@ -11,7 +11,8 @@ import Cart from './Cart';
 import { useSelector } from 'react-redux';
 import { RootState } from '../app/store';
 import { useGetSingleUserQuery } from '../features/auth/authApiSlice';
-import { FaUser } from "react-icons/fa";
+
+
 
 type Link = {
     path: string;
@@ -27,12 +28,11 @@ function Navbar() {
     return (
         <>
             {/* Desktop nav */}
-            <nav className='hidden xl:flex justify-around  items-center gap-4 bg-milk px-8 py-6'>
+            <nav className='hidden lg:flex justify-between items-center gap-4 bg-milk px-8 py-6'>
                 <Link to='/'>
                     <Logo />
                 </Link>
-                <ul className='basis-[40%] mx-auto flex items-center  justify-around '>
-                    
+                <ul className='basis-[50%]  flex items-center  justify-around '>
                     {isAdmin ? links.map((link: Link) => {
                         const { path, name } = link;
                         return (
@@ -63,14 +63,6 @@ function Navbar() {
                         );
                     })}
                 </ul>
-                <SearchBar />
-                <Link to='account'>
-                    <div className='rounded-full size-10 md:size-14 shadow-inner bg-black flex items-center justify-center cursor-pointer text-white'>
-                    {data ? 
-                    <p className='text-2xl'>{data.firstName.slice(0,1)} {data.lastName.slice(0,1)} </p> : <FaUser className=' size-7' />
-                    }
-                    </div>
-                </Link>
             </nav>
 
             {/* Mobile nav*/}
@@ -95,6 +87,7 @@ function Navbar() {
                     )}
                 </div>
             </nav>
+
             {/* backdrop */}
             {isOpen && <div className='fixed top-0 z-30 opacity-75 backdrop-blur-sm bg-black/70 w-screen h-screen'></div>}
 

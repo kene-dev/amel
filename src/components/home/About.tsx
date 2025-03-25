@@ -1,7 +1,8 @@
 import bgImage from '../../assets/webp/home_about_us_bg.webp';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import logo from '../../assets/svgs/logo.svg';
+import logo from '../../assets/png/amel2.png';
+import ig from '../../assets/svgs/ig-icon.svg';
 
 function About() {
     const section1 = useRef(null);
@@ -33,10 +34,10 @@ function About() {
                     className='flex justify-center'>
                     <div className='flex flex-col justify-center items-center bg-black/70 border-2 border-[#FECC00]/80 p-8 h-40 md:h-48 w-5/6 md:w-1/2 rounded-2xl relative'>
                         <p className='max-w-lg text-center line-clamp-3 text-gray-200 font-medium md:text-lg'>
-                            Amel Susan has made breakfast so easy, tasty and yummy for I and my Entire Family
+                            Your 3 in 1 custard is very nice. As a baker, I use your product especially the icing sugar.
                         </p>
-                        <p className='capitalize font-light text-sm md:text-base text-gray-400'> - juliet Robety</p>
-                        <img className='md:size-auto  w-[55px] md:w-auto absolute bg-milk -right-7 -bottom-5 p-2 rounded-2xl' src={logo} />
+                        <p className='capitalize font-light text-sm md:text-base text-gray-400 flex items-center gap-2'> <img src={ig} /> - @Damiofdl18events</p>
+                        <img className='md:size-auto w-[55px] md:w-[150px] absolute -right-7 -bottom-5 p-2 rounded-2xl' src={logo} />
                     </div>
                 </motion.div>
             </div>

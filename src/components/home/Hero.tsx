@@ -84,7 +84,7 @@ const Hero = () => {
                         className="bg-black py-2 md:py-3 px-4 md:px-6 rounded-xl tracking-wide text-lg text-white font-medium flex justify-between items-center gap-2"
                         >
                         <FaCircleArrowRight fill="#FDC900" size={24} />
-                        Go to shop
+                          Learn More
                         </motion.button>
                     </Link>
                     </div>

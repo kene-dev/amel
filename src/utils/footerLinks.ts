@@ -25,19 +25,11 @@ export const links = [
     },
     {
         path: '',
-        name: 'item policy'
-    },
-    {
-        path: '',
-        name: 'return policy'
+        name: 'item / return policy'
     },
     {
         path: '',
         name: 'FAQ'
-    },
-    {
-        path: '',
-        name: 'sitemap'
     },
     {
         path: '',
