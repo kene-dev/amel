@@ -1,7 +1,7 @@
 import FooterLink from './FooterLink';
 import Logo from './Logo';
 import { links } from '../utils/footerLinks';
-import { RiFacebookFill, RiInstagramLine, RiLinkedinBoxFill, RiTwitterXLine } from 'react-icons/ri';
+import { RiFacebookFill, RiInstagramLine, RiLinkedinBoxFill} from 'react-icons/ri';
 import { FaTiktok } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
