@@ -27,7 +27,7 @@ function DistributorsPage() {
                 className='-mt-44 flex items-center justify-center'>
                 <HeroContainer
                     theme='black'
-                    title='distributors'
+                    title='Our Networks'
                     subHeading='Bringing Quality to Your Doorstep'
                     content='From bustling urban centers to serene rural areas, our goal is to make our nutritious cereals and baking ingredients accessible to every Nigerian household.'
                     buttonLabel={<p className='font-semibold'>Become a Distributor</p>}

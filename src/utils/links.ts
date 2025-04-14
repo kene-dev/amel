@@ -9,11 +9,11 @@ export const links = [
     },
     {
         path: 'distributors',
-        name: 'distributors'
+        name: 'Our Networks'
     },
     {
         path: 'product-catalogue',
-        name: 'Products'
+        name: 'Our Products'
     },
     {
         path: 'our-community',
