@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { teamData } from '@/utils/storeLocationData';
 import aboutBanner from '../assets/svgs/aboutBanner.svg';
 
+
 function AboutPage() {
     return (
         <>
@@ -24,9 +25,9 @@ function AboutPage() {
                     buttonLabel={
                         <p className='flex items-center gap-2 font-semibold '>
                             <DownloadIcon /> Download our brochure
-                        
                         </p>
                     }
+                    download='/brochure.pdf'
                     imageSrc={aboutBanner}
 
                 />
@@ -153,7 +154,7 @@ function AboutPage() {
                                     <img src={item.image} className='w-full h-[330px] rounded-2xl object-cover aspect-auto'/>
                                     <h1 className='text-xl font-semibold mt-2 flex-1'>{item.name}</h1>
                                     <p className='text-xs text-[#121212]/70 pr-4'>{item.title}</p>
-                                    <Link to={item.linkedIn}>
+                                    <Link to={item.linkedIn} target='blank'>
                                         <FaLinkedin className='w-6 h-6 text-blue-500 mt-1 rounded-lg' />
                                     </Link>
                                 </div>

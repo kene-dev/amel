@@ -7,6 +7,7 @@ import product6 from "../assets/webp/cocoa_plaine.webp";
 import product7 from "../assets/webp/custard.webp";
 import product8 from "../assets/webp/milk_custard_powder.webp";
 import product9 from "../assets/webp/corn_flour.webp";
+import product10 from "../assets/png/bananaCustard.jpeg";
 
 import ceo from '../assets/team/peter.jpeg';
 import azeez from  '../assets/team/azeez.jpeg';
@@ -452,7 +453,8 @@ export const productCatalogue = [
         Packaged to preserve its freshness, our creamer extends its decadence over time, gracing your moments with enduring satisfaction.
         Each pour unveils a world of creaminess, taste, and texture, creating a symphony of delight that resonates with your palate and values. Add it to your cart today and embrace the journey of taste enlightenment.`,
         keyFeatures:"Full of creamy indulgence.Plant-Powered Perfection.Seamless Mixing.Versatile applications.Long shelve life.Health conscious choice",
-        usageTips:''
+        usageTips:'',
+        line:'breakfast'
     },
     {
         id:"2",
@@ -460,7 +462,8 @@ export const productCatalogue = [
         name:'PURE COCOA POWDER DRINK',
         description:` Introducing our Exquisite Amel Susan100% Cocoa Powdered Drink: Immerse yourself in the pure essence of rich cocoa, meticulously crafted from the finest cocoa beans. Our cocoa powdered drink is a celebration of unadulterated flavor, free from additives and artificial enhancers.True Chocolate Awakening: Experience the genuine taste of chocolate in its purest form. Amel Susan 100% cocoa powdered drink is skillfully processed to capture the essence of cocoa beans, delivering an unparalleled depth of flavor that will redefine your cocoa-drinking experience.Uncompromising Excellence: Harvested from select cocoa beans, our powdered drink embodies the dedication to preserving the authenticity of nature's wonders. With no additives or preservatives, every sip is a direct connection to the heart of cacao's marvels.Your Retreat, Your Way: Whether you seek a moment of calm in a steaming mug, or you're looking to add a luxurious twist to your coffee, our cocoa powdered drink is your versatile companion. Revel in its indulgent notes, creating your haven of cocoa-infused tranquility.Moments Redefined: Rediscover the joy in life's little pleasures with a cup of Amel Susan 100% cocoa powdered drink. Whether you're unwinding after a long day or sharing laughter with loved ones, this drink transforms each moment into a celebration of pure cocoa delight.Indulge in the authentic essence of cocoa with our Exquisite Amel Susan 100% Cocoa Powdered Drink. Elevate your everyday moments and relish in the unadulterated goodness of nature's finest. Redefine your cocoa experience – order now and embark on a journey of flavor, quality, and pure indulgence.`,
         keyFeatures:"Unadulterated 100% Cocoa Powder.Natural Goodness.Rich in Antioxidants.No Added Sugar.Natural Energy Boost.Promotes Heart Health",
-        usageTips:''
+        usageTips:'',
+        line:'breakfast'
     },
     {
         id:"3",
@@ -468,7 +471,8 @@ export const productCatalogue = [
         name:'BAKING SODA',
         description:" Introducing our premium Amel Susan Baking Soda – the versatile essential that belongs in every kitchen! Elevate your baking and cleaning experiences with our meticulously refined formula that promises exceptional results every time.Unleash the power of Amel Susan Baking Soda and transform your culinary creations and household chores into truly exceptional experiences. Crafted with utmost care and precision, Amel Susan Baking Soda is the secret ingredient you've been searching for",
         keyFeatures:`Unmatched Purity: Amel Susan Baking Soda is sourced from the finest natural deposits and undergoes a rigorous purification process, ensuring the highest level of quality and purity in every granule. Ultimate Baking Aid: Elevate your baking game with consistent, predictable, and outstanding results, Amel Susan Baking Soda acts as a reliable leavening agent, producing soft, fluffy textures and delightful rise in your baked goods. Odor Neutralizer Extraordinaire: Say goodbye to unwanted odors that linger in your home, Amel Susan Baking Soda is a natural and effective way to absorb and eliminate odors, leaving your living spaces smelling fresh and clean. Gentle Abrasive Cleanser: Harness the cleaning power of baking soda to effortlessly scrub away dirt, grime, and stains, From kitchen counters to bathroom tiles, its gentle abrasiveness ensures surfaces shine without scratching.Eco-Friendly Marvel: Make a choice that's kind to the planet, Amel Susan Baking Soda is environmentally friendly, free from harsh chemicals, and completely biodegradable. Endless Possibilities: From baking and cooking to cleaning and deodorizing, our Baking Soda is your go-to solution for a wide range of household applications, Explore the versatility of this all-in-one essential`,
-        usageTips:`For Baking: Use as directed in recipes for perfect rising and exceptional texture in your baked goods.For Cleaning: Create a paste with water for gentle scouring or mix with your favorite cleaning products for enhanced effectiveness.For Deodorizing: Simply sprinkle in areas prone to odors or place an open container in the refrigerator to keep it smelling fresh.Amel Susan Baking Soda is the cornerstone of a well-equipped kitchen and a cleaner, fresher home. Elevate your baking and cleaning experiences with a product that embodies quality, versatility, and sustainability.Add Amel Susan Baking Soda to your cart now and redefine the way you bake, clean, and live!`
+        usageTips:`For Baking: Use as directed in recipes for perfect rising and exceptional texture in your baked goods.For Cleaning: Create a paste with water for gentle scouring or mix with your favorite cleaning products for enhanced effectiveness.For Deodorizing: Simply sprinkle in areas prone to odors or place an open container in the refrigerator to keep it smelling fresh.Amel Susan Baking Soda is the cornerstone of a well-equipped kitchen and a cleaner, fresher home. Elevate your baking and cleaning experiences with a product that embodies quality, versatility, and sustainability.Add Amel Susan Baking Soda to your cart now and redefine the way you bake, clean, and live!`,
+        line:'baking'
     },
     {
         id:"4",
@@ -476,7 +480,8 @@ export const productCatalogue = [
         name:'FINEST ICING SUGAR',
         description:" Elevate your baking with Amel Susan Finest Icing Sugar – the secret to creating flawless, artistic treats. Sourced from the finest sugar crystals, our ultra-fine powder blends seamlessly for silky icings, glazes, and frostings that impress. Its pure, consistent quality guarantees a smooth finish every time, while its versatility lets flavours shine. Craft vibrant colours and intricate details effortlessly. Its elasticity ensures reduced waste and saves you money every time.Whether you're a professional pastry chef or a home baking enthusiast, Amel Susan Finest Icing Sugar guarantees impeccable results, turning your creations into masterpieces.Choose Premium Quality Always, choose our Amel Susan Finest Icing Sugar and experience baking elevated to an art form.",
         keyFeatures:"Made from quality and finest sugar crystals.Fortified with vitamins.Ultra-fine texture.Smooth and super elastic.Consistent quality.Works with all recipes",
-        usageTips:''
+        usageTips:'',
+        line:'baking'
     },
     {
         id:"5",
@@ -489,7 +494,8 @@ export const productCatalogue = [
         Smooth Texture: The finely ground consistency of our cocoa powder guarantees a silky-smooth texture when mixed into your batters and doughs, Say goodbye to clumps and hello to evenly distributed cocoa goodness in every mouthful.
         Endless Inspiration: Explore an array of recipes that highlight the magic of our cocoa powder, From classic hot cocoa to intricate chocolate truffles, let your creativity run wild and captivate taste buds with your culinary masterpieces.
         Packaging Excellence: Our cocoa powder comes in a resealable, airtight pouch that preserves its freshness and flavor, ensuring you can savor its excellence over multiple baking sessions`,
-        usageTips:''
+        usageTips:'',
+        line:'baking'
     },
     {
         id:"6",
@@ -501,7 +507,8 @@ export const productCatalogue = [
         Smooth Texture: The finely ground consistency of our cocoa powder guarantees a silky-smooth texture when mixed into your batters and doughs, Say goodbye to clumps and hello to evenly distributed cocoa goodness in every mouthful.
         Endless Inspiration: Explore an array of recipes that highlight the magic of our cocoa powder, From classic hot cocoa to intricate chocolate truffles, let your creativity run wild and captivate taste buds with your culinary masterpieces.
         Packaging Excellence: Our cocoa powder comes in a resealable, airtight pouch that preserves its freshness and flavor, ensuring you can savor its excellence over multiple baking sessions`,
-        usageTips:''
+        usageTips:'',
+        line:'baking'
     },
     {
         id:"7",
@@ -509,7 +516,8 @@ export const productCatalogue = [
         name:'VANILLA FLAVOURED CUSTARD POWDER',
         description:" Introducing our delectable Amel Susan Vanilla Flavored Custard Powder – a taste of pure indulgence in every spoonful! Elevate your breakfast or dessert experience with the rich and creamy texture of this exquisite custard powder.Crafted to perfection, our Vanilla Flavored Custard Powder boasts a harmonious blend of premium ingredients, carefully selected to bring you a velvety-smooth delight that will tantalize your taste buds. With its irresistible aroma and delicate sweetness, this custard powder transforms ordinary moments into extraordinary memories.Whether you\'re looking to create a classic custard dessert or exploring creative breakfasts with the family, our Vanilla Flavored Custard Powder offers unrivaled versatility. It dissolves effortlessly, giving birth to a luscious, golden-hued custard that can be enjoyed on its own or paired with a medley of fruits, pastries, and confections.Indulge in the timeless elegance of vanilla, as each serving envelops you in a comforting embrace of flavor. The nostalgic essence of vanilla complements the smooth custard base, creating a symphony of tastes that appeals to the young and the young-at-heart.Transform your kitchen into a haven of culinary innovation with the convenience of our Vanilla Flavored Custard Powder.Whether you\'re a seasoned chef or a home cook, you\'ll appreciate how easily this powder lends itself to creating both traditional favorites and modern masterpieces. Elevate your dessert and breakfast game, impress your guests, and create lasting memories with the delightful allure of our Vanilla Flavored Custard Powder.Order now and embark on a journey of taste that will leave you craving for more. It\'s time to savor the sweetness of life, one spoonful at a time.",
         keyFeatures:"Rich Vanilla Flavour.Creamy Texture.Easy Prepartion.High Quality Ingredients.Family Friendly.Satisfaction Guaranteed",
-        usageTips:''
+        usageTips:'',
+        line:'breakfast'
     },
     {
         id:"8",
@@ -517,7 +525,9 @@ export const productCatalogue = [
         name:'MILK CUSTARD POWDER (3-IN-1)',
         description:" Introducing our delectable Amel Susan 3-in-1 Milk Custard Powder, a delightful twist on traditional cereals that will revolutionize your breakfast routine. This extraordinary blend combines the creamy goodness of milk and sugar with the velvety smoothness of custard, all in one convenient and irresistible package.Imagine waking up to the inviting aroma of a warm and comforting bowl of custard-infused cereal, ready to energize your day. With Amel Susan 3-in-1 Milk Custard Powder, you'll enjoy a harmonious balance of flavors that dance across your taste buds, delivering a symphony of satisfaction with every spoonful. Crafted with precision and care, this innovative cereal solution saves you precious morning minutes and money by seamlessly merging the joy of custard and the nourishment of milk and sugar. Our premium ingredients are carefully selected to provide you with a wholesome breakfast that\'s as convenient as it is delectable. Each serving bursts with the luscious creaminess of milk and the gentle sweetness of custard and sugar, creating a sensory experience that lingers long after your last bite.Whether you prefer your breakfast moments to be serene and solitary or lively and shared with loved ones, our 3-in-1 Milk Custard Powder is the perfect breakfast companion. Indulge yourself in a bowl of comfort or create lasting memories by serving it to your family and friends. The versatility of this product knows no bounds – enjoy it warm for a cozy start to the day, or let it chill for a refreshing treat during warmer seasons.Say goodbye to the mundane and embrace the extraordinary with Amel Susan 3-in-1 Milk Custard Powder. Elevate your breakfast game, tantalize your taste buds, and start each day on a note of pure culinary delight. Your mornings will never be the same again.",
         keyFeatures:"Unique fusion of Milk Sugar and Custard Powder. Premium Quality Ingredients. Quick and easy to prepare. Smooth delicious taste. Family-Friendly. Cost Effective",
-        usageTips:''
+        usageTips:'',
+        line:'breakfast'
+
     },
     {
         id:"9",
@@ -525,8 +535,19 @@ export const productCatalogue = [
         name:'CORN FLOUR',
         description:" Elevate your culinary creations with our Premium Amel Susan Corn Flour, a versatile and essential ingredient for every kitchen. Made from high-quality, non-GMO corn, our corn flour is finely milled to perfection, ensuring a smooth and consistent texture that's perfect for a wide range of recipes.",
         keyFeatures:"Exceptional Quality: Our Premium Corn Flour is sourced from the finest non-GMO corn, carefully selected to deliver superior taste and texture to your dishes.Smooth Texture: Milled to a fine consistency, this corn flour effortlessly blends into your recipes, ensuring a smooth texture and preventing any unwanted grittiness. Versatile Ingredient: Whether you're baking, cooking, or thickening sauces, our corn flour is a go-to ingredient that adds depth and flavor to your creations, It's perfect for making tortillas, cornbread, coatings for fried foods, and more. Gluten-Free Option: Our corn flour is naturally gluten-free, making it an excellent choice for those with dietary restrictions or looking to explore gluten-free cooking. Nutritious and Wholesome: Packed with essential nutrients and dietary fiber, our corn flour not only enhances the taste of your dishes but also contributes to a balanced diet. Resealable Packaging: Our corn flour comes in a convenient resealable bag, ensuring its freshness and extending its shelf life",
-        usageTips:'Use it to make perfectly fluffy and flavorful cornbread that\'s sure to impress your guests. Add it to your pancake and waffle mix for a delightful twist on breakfast classics.Create a crispy coating for fried chicken, fish, or vegetables by combining corn flour with your favorite seasonings.Thicken soups, stews, and sauces with our corn flour to achieve the desired consistency and enhance flavors.'
+        usageTips:'Use it to make perfectly fluffy and flavorful cornbread that\'s sure to impress your guests. Add it to your pancake and waffle mix for a delightful twist on breakfast classics.Create a crispy coating for fried chicken, fish, or vegetables by combining corn flour with your favorite seasonings.Thicken soups, stews, and sauces with our corn flour to achieve the desired consistency and enhance flavors.',
+        line:'baking'
     },
+
+    {
+        id:"10",
+        image:  product10,
+        name:'BANANA FLAVOURED CUSTARD POWDER',
+        description:"Introducing our delectable Amel Susan Banana Flavoured Custard Powder – a delightful fusion of classic comfort and wholesome nutrition, designed to kick-start your day with a burst of energy and flavour!Imagine waking up to the irresistible aroma of freshly ripe bananas paired with the creamy indulgence of custard, all combined into a convenient cereal format. Amel Susan Banana Flavoured Custard Powder is a culinary masterpiece that brings together the goodness of hearty breakfast and the joy of dessert, all in one delightful bowl.Each spoonful is a journey into blissful breakfast moments. The velvety-smooth custard powder blends seamlessly with your choice of milk, transforming into a luscious and satisfying texture that's both soothing and satisfying.Infused with the essence of perfectly ripe bananas, this cereal offers a genuine tropical experience that transports your taste buds to a sunny paradise.Not only is this cereal a treat for your palate, but it's also a smart choice for your health. Packed with essential nutrients, vitamins, and minerals, it provides a balanced start to your day. The naturally occurring sugars from the bananas offer a gentle energy boost, keeping you fueled and focused throughout your morning activities.Whether enjoyed by kids and adults alike, Amel Susan Banana Flavoured Custard Powder is a versatile option. It's not just for breakfast – it's an anytime snack, a quick dessert replacement, and a source of happiness whenever your taste buds yearn for something truly delightful.Incorporate joy and nourishment into your morning routine with Amel Susan Banana Flavoured Custard Powder. Experience the timeless combination of bananas and custard in a convenient, wholesome form that's designed to make your mornings a little brighter and your taste buds dance with happiness. Order now and savor the fusion of flavor, comfort, and nutrition in every spoonful!",
+        keyFeatures:"Authentic Banana flavour. Creamy Texture. Easy Preparation. High quality Ingredients. Family friendly.Satisfaction Guaranteed",
+        usageTips:'',
+        line:'breakfast'
+    }
 ]
 
 export const teamData = [

@@ -5,7 +5,6 @@ import { Account, Cart, CheckOut, CommunityPage, DistributorsPage, ErrorPage, Ho
 import AboutPage from './routes/AboutPage';
 import { Coupons, Dashboard, Orders, Products } from './routes/admin';
 import { ProtectedRoute } from './components';
-import AboutProfile from './routes/AboutProfile';
 import ProductCatalogue from './routes/ProductCatalogue';
 import ProductDetails from './routes/ProductDetails';
 
@@ -17,7 +16,6 @@ function App() {
             children: [
                 { index: true, element: <HomePage /> },
                 { path: 'about', element: <AboutPage /> },
-                { path: 'about/:id', element: <AboutProfile /> },
                 { path: 'our-community', element: <CommunityPage /> },
                 { path: 'distributors', element: <DistributorsPage /> },
                 { path: 'product-catalogue', element: <ProductCatalogue/> },

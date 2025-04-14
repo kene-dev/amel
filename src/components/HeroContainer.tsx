@@ -15,6 +15,7 @@ function HeroContainer({
     imageSrc,
     alt,
     linkTo,
+    download,
     action
 }: {
     theme: 'red' | 'black';
@@ -25,6 +26,7 @@ function HeroContainer({
     imageSrc?: string;
     alt?: string;
     linkTo?:string;
+    download?:string;
     action?: (option: boolean) => void
 }) {
     return (
@@ -47,7 +49,13 @@ function HeroContainer({
                      ): 
                      buttonLabel && action ? (<div onClick={() => action(true)}>
                      <Button theme={theme === 'red' ? 'yellow' : 'red'} text={buttonLabel} />
-                     </div>)  : buttonLabel ? (<Button theme={theme === 'red' ? 'yellow' : 'red'} text={buttonLabel} />): null
+                     </div>) : buttonLabel && download ?  (
+                        <div className='mt-3'>
+                            <a href={download} download='brochure' >
+                                <Button theme={theme === 'red' ? 'yellow' : 'red'} text={buttonLabel}  /> 
+                            </a>
+                        </div>
+                     ): buttonLabel ? (<Button theme={theme === 'red' ? 'yellow' : 'red'} text={buttonLabel} />): null
                      }
                      
                      
