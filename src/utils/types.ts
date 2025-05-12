@@ -5,7 +5,6 @@ export interface User {
     email: string;
     roles: string[]
     exp: string;
-   
 }
 
 export interface Product {
@@ -100,4 +99,42 @@ export interface Customer {
     country: string;
     instructions?: string; // Optional field
     date: string;
+  }
+
+  export interface Jobs {
+    _id: string;
+    title: string;
+    description: string;
+    priceRangeMin: number;
+    priceRangeMax: number;
+    jobType:string;
+    workLocation:string;
+    image: string;
+    createdAt: string;
+    updatedAt: string;
+  }
+
+  export interface Blogs {
+    _id: string;
+    title: string;
+    content: string;
+    mainImage: string;
+    author:string;
+    tags:string[];
+    createdAt: string;
+    updatedAt: string;
+  }
+
+  export interface JobsReponse {
+    jobs: Jobs[] | [],
+    count: number,
+    page: number,
+    limit: number
+  }
+
+  export interface BlogsReponse {
+    posts: Blogs[] | [],
+    count: number,
+    page: number,
+    limit: number
   }

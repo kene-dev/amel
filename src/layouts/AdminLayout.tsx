@@ -49,7 +49,7 @@ function AdminLayout() {
                     duration: 1.5,
                     staggerChildren: 0.2
                 }}
-                className='container col-span-3 py-6 xl:py-12 px-5 xl:px-10'>
+                className='container col-span-3 py-6 xl:py-12 px-5 xl:px-4'>
                 <ScrollRestoration />
                 <Outlet />
                 <MobileNav />
@@ -78,7 +78,7 @@ function AdminLayout() {
                                 id='product-name'
                             />
                         </div>
-                        <div className='flex items-center gap-3 w-full'>
+                        <div className='flex items-center gap-3 w-full '>
                             <div className='space-y-1'>
                                 <label htmlFor='product-price'>Price</label>
                                 <div className='flex items-center px-3 py-2 max-w-1/2 border border-black rounded-lg bg-white focus-within:outline focus-within:outline-primary'>

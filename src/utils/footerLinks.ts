@@ -4,8 +4,12 @@ export const links = [
         name: 'team'
     },
     {
-        path: '',
-        name: 'Press/Blog'
+        path: '/blog-view',
+        name: 'newsroom'
+    },
+    {
+        path: '/job-view',
+        name: 'careers'
     },
     {
         path: '',

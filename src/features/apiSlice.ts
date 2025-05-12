@@ -2,8 +2,11 @@ import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit
 import { RootState } from '../app/store';
 import { logOut, updateToken } from './auth/authSlice';
 
+const BASE_URL = 'https://tulip-jg22.onrender.com/api/v1'
+// const BASE_URL = 'https://tulipexpress-amel-susan.azurewebsites.net/api/v1'
+
 const baseQuery = fetchBaseQuery({
-  baseUrl: 'https://tulipexpress-amel-susan.azurewebsites.net/api/v1',
+  baseUrl: BASE_URL,
   prepareHeaders: (headers, { getState, endpoint}) => {
     const state = getState() as RootState;
     const token = state.auth.access_token;
@@ -61,6 +64,6 @@ export const baseQueryWithReauth = async (args: any, api: any, extraOptions: any
 export const apiSlice = createApi({
     reducerPath: 'api',
     baseQuery : baseQueryWithReauth,
-      tagTypes: ["Products"],
+      tagTypes: ["Products", "Jobs", "Blogs"],
     endpoints: () => ({}),
   });

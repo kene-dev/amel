@@ -7,6 +7,11 @@ import { Coupons, Dashboard, Orders, Products } from './routes/admin';
 import { ProtectedRoute } from './components';
 import ProductCatalogue from './routes/ProductCatalogue';
 import ProductDetails from './routes/ProductDetails';
+import Jobs from './routes/admin/jobs/Jobs';
+import JobView from './routes/jobView/JobView';
+import Blogs from './routes/admin/blogs/Blogs';
+import BlogViewList from './routes/blogView/BlogViewList';
+import SingleBlogView from './routes/blogView/SingleBlogView';
 
 function App() {
     const router = createBrowserRouter([
@@ -18,6 +23,9 @@ function App() {
                 { path: 'about', element: <AboutPage /> },
                 { path: 'our-community', element: <CommunityPage /> },
                 { path: 'distributors', element: <DistributorsPage /> },
+                { path: 'job-view', element: <JobView /> },
+                { path: 'blog-view', element: <BlogViewList /> },
+                { path: 'blog-view/:id', element: <SingleBlogView /> },
                 { path: 'product-catalogue', element: <ProductCatalogue/> },
                 { path: 'product-catalogue/:id', element: <ProductDetails/> },
                 { path: 'shop', element: <ShopPage /> },
@@ -81,6 +89,22 @@ function App() {
                     element: (
                         <ProtectedRoute adminOnly>
                             <Products />
+                        </ProtectedRoute>
+                    )
+                },
+                {
+                    path: 'jobs',
+                    element: (
+                        <ProtectedRoute adminOnly>
+                            <Jobs />
+                        </ProtectedRoute>
+                    )
+                },
+                {
+                    path: 'blogs',
+                    element: (
+                        <ProtectedRoute adminOnly>
+                            <Blogs />
                         </ProtectedRoute>
                     )
                 }

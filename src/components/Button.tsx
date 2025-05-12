@@ -6,7 +6,7 @@ const buttonStyle = {
     yellow: 'bg-primary text-black  hover:bg-yellow-500'
 };
 
-function Button({width, theme, text, type = 'button', disabled }: { theme: 'red' | 'yellow'; disabled?: boolean; width?: string; text?: string | ReactNode; type?: 'button' | 'submit' | 'reset' | undefined }) {
+function Button({width, theme, text, textStyle, type = 'button', disabled }: { theme: 'red' | 'yellow'; textStyle?: string; disabled?: boolean; width?: string; text?: string | ReactNode; type?: 'button' | 'submit' | 'reset' | undefined }) {
     return (
         <motion.button
             whileHover={{
@@ -18,7 +18,7 @@ function Button({width, theme, text, type = 'button', disabled }: { theme: 'red'
             className={`py-2 md:py-3 px-4 md:px-6 rounded-xl font-medium ${width ? `w-[${width}]` : 'w-auto'} ${theme === 'red' ? buttonStyle.red : buttonStyle.yellow}`}
             disabled={disabled}
             type={type}>
-            {text ? text : 'Go to shop'}
+            {text ? (<p className={textStyle && textStyle}>{text}</p>)  : 'Go to shop'}
         </motion.button>
     );
 }
