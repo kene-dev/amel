@@ -7,11 +7,11 @@ import { Coupons, Dashboard, Orders, Products } from './routes/admin';
 import { ProtectedRoute } from './components';
 import ProductCatalogue from './routes/ProductCatalogue';
 import ProductDetails from './routes/ProductDetails';
-import Jobs from '@/routes/admin/jobs/Jobs';
-import JobView from '@/routes/jobView/JobView';
-import Blogs from '@/routes/admin/blogs/Blogs';
-import BlogViewList from '@/routes/blogView/BlogViewList';
-import SingleBlogView from './routes/blogView/SingleBlogView';
+import Jobs from './routes/admin/jobs/Jobs.tsx';
+import JobView from './routes/jobView/JobView.tsx';
+import Blogs from './routes/admin/blogs/Blogs.tsx';
+import BlogViewList from './routes/blogView/BlogViewList.tsx';
+import SingleBlogView from './routes/blogView/SingleBlogView.tsx';
 
 function App() {
     const router = createBrowserRouter([
