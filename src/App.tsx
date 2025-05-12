@@ -11,7 +11,7 @@ import Jobs from '@/routes/admin/jobs/Jobs';
 import JobView from '@/routes/jobView/JobView';
 import Blogs from '@/routes/admin/blogs/Blogs';
 import BlogViewList from '@/routes/blogView/BlogViewList';
-import SingleBlogView from '@/routes/blogView/SingleBlogView';
+import SingleBlogView from './routes/blogView/SingleBlogView';
 
 function App() {
     const router = createBrowserRouter([
