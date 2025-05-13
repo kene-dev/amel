@@ -21,16 +21,16 @@ const BlogViewList = () => {
         setCurrentPage(selected + 1);
     };
 
-  console.log(data)
+console.log(data)
   return (
     <div className="w-full h-full flex flex-col gap-10 py-10 bg-gray-100">
         {isLoading && <Loader />}
         <div className="lg:w-[80%] w-full mx-auto px-5">
             
-            <div className="lg:w-full lg:h-[500px] flex flex-col lg:flex-row items-center justify-center gap-5 bg-white rounded-md shadow-lg p-4">
+            <div className="lg:w-full lg:h-[500px] flex flex-col-reverse lg:flex-row items-center justify-center gap-5 bg-white rounded-md shadow-lg p-4">
             
                 <div className="w-full flex flex-col gap-10 ">
-                    <div>
+                    <div className="flex flex-col gap-2">
                         <h1 className="text-4xl font-semibold text-black/80">{data?.posts[0].title}</h1>
                         <div className="flex items-center gap-2">
                             <div className="flex items-center gap-1">
@@ -39,10 +39,16 @@ const BlogViewList = () => {
                             </div>
                             <p className="lg:text-xs text-sm text-[#12121296]">{date}</p>
                         </div>
+
+                        <div className='w-full flex items-center gap-2 flex-wrap'>
+                            {data?.posts[0].tags.slice(0,3).map(tag => ( 
+                             <p className="p-1 bg-black text-white w-max text-xs rounded-md">{tag}</p>
+                            ))}
+                        </div>
                     </div>
 
                     <div 
-                        className="text-sm text-[#12121299] w-3/4 job-description blog-view "
+                        className="text-sm text-[#12121299] w-3/4 job-description line-clamp-5 "
                         dangerouslySetInnerHTML={{ __html: sanitizeDescription(content as string) }}
                     />
                      <Link to={`/blog-view/${data?.posts[0]._id}`} className="w-max p-3 px-9 text-sm rounded-md text-white bg-[#DB4444]">
@@ -60,28 +66,31 @@ const BlogViewList = () => {
         <div className="lg:w-[80%] w-full h-full mx-auto flex flex-col lg:flex-row flex-wrap item-start justify-around lg:gap-20 gap-10 p-4">
             {data && data.posts.slice().sort((a, b) => b.createdAt.localeCompare(a.createdAt)).map(post => (
                 <Link to={`/blog-view/${post._id}`}>
-                    <div key={post._id} className="lg:w-[300px] w-full h-[320px] flex flex-col gap-2 rounded-xl bg-white">
-                        <div className="h-[170px] w-full p-2">
-                        <img src={post.mainImage} className="w-full h-full object-cover rounded-t-xl" />  
+                    <div key={post._id} className="lg:w-[300px] w-full lg:h-[350px] h-max flex flex-col justify-around gap-2 rounded-xl bg-white relative p-3">
+                        <div className="h-[170px] w-full ">
+                            <img src={post.mainImage} className="w-full h-full object-cover rounded-t-xl" />  
                         </div>
 
-                        <div className="px-3 flex flex-col gap-1">
-                        <h1 className="text-base lg:text-sm font-semibold w-4/5">{post.title}</h1>
-                        <div className="flex items-center gap-3">
-                            <div className="flex items-center gap-1">
-                            <SiOpenbadges className='text-[#DB4444] lg:text-sm text-sm' /> 
-                            <p className="lg:text-xs text-sm text-[#121212]">{post.author}</p>
+                        <div className="flex flex-col gap-1">
+                            <h1 className="text-base lg:text-sm font-semibold w-4/5 line-clamp-2">{post.title}</h1>
+                            <div className="flex items-center gap-3">
+                                <div className="flex items-center gap-1">
+                                <SiOpenbadges className='text-[#DB4444] lg:text-sm text-sm' /> 
+                                <p className="lg:text-xs text-sm text-[#121212]">{post.author}</p>
+                                </div>
+                                <p className="lg:text-xs text-sm text-[#12121299]">{new Date(post.createdAt).toLocaleDateString()}</p>
                             </div>
-                            <p className="lg:text-xs text-sm text-[#12121299]">{new Date(post.createdAt).toLocaleDateString()}</p>
-                        </div>
                         </div>
 
-                        <div className='flex flex-col px-3'>
-                            <div 
-                            className="text-sm text-[#12121299] w-full job-description blog-view-client"
-                            dangerouslySetInnerHTML={{ __html: sanitizeDescription(post.content) }}
-                            />
+                        <div className='w-full flex items-center gap-2 flex-wrap'>
+                            {post.tags.slice(0,3).map(tag => ( 
+                             <p className="p-1 bg-black text-white w-max text-xs rounded-md">{tag}</p>
+                            ))}
                         </div>
+
+                        <Link to={`/blog-view/${post._id}`} className=" w-max p-3 px-9 text-xs rounded-md text-white bg-[#DB4444]">
+                         Read More
+                        </Link>
                     </div>  
                 </Link>
             ))}
