@@ -42,7 +42,7 @@ console.log(data)
 
                         <div className='w-full flex items-center gap-2 flex-wrap'>
                             {data?.posts[0].tags.slice(0,3).map(tag => ( 
-                             <p className="p-1 bg-black text-white w-max text-xs rounded-md">{tag}</p>
+                             <p className="p-1 bg-black/40 text-white w-max text-xs rounded-md px-7">{tag}</p>
                             ))}
                         </div>
                     </div>
@@ -84,7 +84,7 @@ console.log(data)
 
                         <div className='w-full flex items-center gap-2 flex-wrap'>
                             {post.tags.slice(0,3).map(tag => ( 
-                             <p className="p-1 bg-black text-white w-max text-xs rounded-md">{tag}</p>
+                             <p className="p-1 bg-black/40 text-white w-max text-xs rounded-md px-3">{tag}</p>
                             ))}
                         </div>
 

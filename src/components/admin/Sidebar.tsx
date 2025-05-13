@@ -6,7 +6,7 @@ function Sidebar() {
     return (
         <nav className='hidden xl:block py-8 h-[98%] bg-white w-[300px] px-10 mx-4 rounded shadow-sm'>
             <span className='flex justify-center items-center'>
-                <Link to='/admin'>
+                <Link to='/'>
                     <Logo />
                 </Link>
             </span>

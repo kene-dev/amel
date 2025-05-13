@@ -94,7 +94,7 @@ const BlogList = ({action, setID}:BlogListProps ) => {
         {/* Content preview */}
         <div className="w-full flex flex-col gap-2">
             <div 
-            className="text-sm text-black/90 w-full job-description blog-view"
+            className="text-sm text-black/90 w-full job-description line-clamp-4"
             dangerouslySetInnerHTML={{ __html: sanitizeDescription(post.content) }}
             />
 

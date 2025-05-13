@@ -43,7 +43,7 @@ const JobViewList = ({action, setID}: JobListProps) => {
                 </div>
   
   
-                <div className="text-sm text-black/90 w-full job-description job-view" dangerouslySetInnerHTML={{__html: sanitizeDescription(job.description)}}/>
+                <div className="text-sm text-black/90 w-full job-description line-clamp-3" dangerouslySetInnerHTML={{__html: sanitizeDescription(job.description)}}/>
   
                 <div className="w-full lg:place-items-end">
                 <motion.button

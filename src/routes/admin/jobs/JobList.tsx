@@ -72,7 +72,7 @@ const JobList: React.FC<JobListProps> = ({action, setID}) => {
                 <span className="p-2 border-[1px] border-black rounded-full text-xs">{job.jobType}</span>
             </div>
         
-            <div className="text-sm text-black/90 w-full job-description job-view" dangerouslySetInnerHTML={{__html: sanitizeDescription(job.description)}}/>
+            <div className="text-sm text-black/90 w-full job-description line-clamp-3" dangerouslySetInnerHTML={{__html: sanitizeDescription(job.description)}}/>
         
             <div className="w-full place-items-end">
                 <motion.button

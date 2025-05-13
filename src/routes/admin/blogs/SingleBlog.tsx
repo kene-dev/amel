@@ -44,17 +44,19 @@ const SingleBlog = ({action, ID} : SingleBlogProps) => {
             {/* JOB TITLE AND PAY AREA */}
             <div className='w-full flex items-start justify-between'>  
                 <div className='flex flex-col gap-1'>
-                    <div className='flex items-center gap-4'>
+                    <div className='flex items-start gap-4'>
                         <SiOpenbadges className='text-[#DB4444] text-5xl' /> 
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <p className='text-base text-black/90 font-semibold'>{data.author}</p>
                             <p className='text-sm text-black/80'>{new Date(data.createdAt).toLocaleDateString()}</p>
+                            <div className='w-full flex items-center gap-2 flex-wrap'>
+                            {data.tags.map(tag => ( 
+                                <p className="p-1 bg-black/40 text-white w-max text-xs rounded-md px-3">{tag}</p>
+                            ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                {/* JOB RENUMERATION */}
-                {/* <p className='text-sm text-black/80'>${data.priceRangeMin} - ${data.priceRangeMax}/mon</p> */}
             </div>
 
             <hr className='h-[2px] bg-black/40' />

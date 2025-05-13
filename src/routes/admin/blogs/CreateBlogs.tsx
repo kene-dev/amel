@@ -10,6 +10,7 @@ import { Button } from "@/components";
 import { ViewType } from "./Blogs";
 import { cloudinaryUpload } from "@/utils/cloudinaryUpload";
 import { useCreateBlogsMutation } from "@/features/blogs/blogsApiSlice";
+import { MdCancel } from 'react-icons/md';
 import Loader from "@/components/Loader";
 
 type CreateBlogProps = {
@@ -47,6 +48,13 @@ const CreateBlogs = ({action}: CreateBlogProps) => {
             }
         }
 
+        const handleRemoveImage = () => {
+            if (fileName) {
+                URL.revokeObjectURL(fileName);
+                setFileName(null);
+            }
+        };
+
         const formSubmit: SubmitHandler<createBlogTypeInput> = async (data) => {
           if(!formData.description) return
           console.log(data)
@@ -67,15 +75,16 @@ const CreateBlogs = ({action}: CreateBlogProps) => {
 
 
   return (
-    <div className="w-3/5 h-full flex flex-col gap-3"> 
-    {isSubmitting && <Loader />}     
+    <div className="w-4/5 h-full flex flex-col gap-3"> 
+            {isSubmitting && <Loader />}     
             <div className="place-self-end" onClick={() => action(ViewType.ALL_BLOGS)}>
                  <Button theme='red' textStyle='text-xs p-1 cursor-pointer' text="See all job posts" />
             </div>
             <form onSubmit={handleSubmit(formSubmit)} className="w-full flex flex-col gap-7 bg-white rounded-md p-4">
                 {/* MAIN IMAGE AREA */}
-                {fileName ? (<div className="w-full h-[233px] rounded-[20px]">
+                {fileName ? (<div className="w-full h-[233px] relative rounded-[20px]">
                     <img  src={fileName} className="w-full h-full object-cover aspect-auto rounded-[20px]"/>
+                    <MdCancel onClick={handleRemoveImage} className='absolute -top-3 -right-4 w-6 h-6 text-red-600 cursor-pointer' />
                 </div>) : (
 
 
