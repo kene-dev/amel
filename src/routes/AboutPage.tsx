@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { teamData } from '@/utils/storeLocationData';
 import aboutBanner from '../assets/svgs/aboutBanner.svg';
+import brochure from '../../brochure.pdf'
 
 
 function AboutPage() {
@@ -27,7 +28,7 @@ function AboutPage() {
                             <DownloadIcon /> Download our brochure
                         </p>
                     }
-                    download='/brochure.pdf'
+                    download={brochure}
                     imageSrc={aboutBanner}
 
                 />
