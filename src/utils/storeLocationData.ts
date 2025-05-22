@@ -22,6 +22,7 @@ import segun from  '../assets/team/segun.jpeg';
 import adu from  '../assets/team/adu.jpeg';
 import chinedu from  '../assets/team/chinedu.jpeg';
 
+
 // type productCatType =  {
 //     id:number,
 //     image:string,
@@ -626,3 +627,288 @@ export const teamData = [
         linkedIn:"https://www.linkedin.com/in/chinedu-ofia-a61a1114b/"
     },
 ]
+
+export const corporateClients = [
+    {title:'Just foods'},
+    {title:'Sweet Sensation'},
+    {title:'Kripsy Kreme', slug:'QFA Nigeria'},
+    {title:'Freddy Hirsch'},
+    {title:'Nutzy Peanut Butter'},
+    {title:'General food & sweet manufacturing', slug:"Chocolate Royal"},
+    {title:'Action Konnect Limited', slug:"Mich and Kay"},
+    {title:'Bukka Hut Hospitality'},
+    {title:'Foodcity'},
+    {title:'Candy Plus', slug:"Fruit Plus Sweet"},
+    {title:'Alpine Ice cream'},
+    {title:'Micmakin Nigeria Ltd', slug:"Chicken Republic Franchise Partner"},
+]
+
+export const supermarkets = [
+    'Sundry Markets',
+    'Prime Mart Superstores',
+    'Jendol Superstore',
+    'Blenco Supermarket',
+    'Roban Stores',
+    'Gabbs Supermarket',
+    'Twinsfaja Supermarket',
+    'Everyday Emporium',
+    'Foodco',
+    'Globus  Supermarket',
+    'Ateros Retail Stores (Boku)',
+    'Brent Supermarket',
+    'Multiker',
+    'Shop Perfect Stores',
+    'Renee Supermarket',
+    'Shop Perfect Stores',
+    'Prince Ebeano Supermarket',
+    'Urban Supermarket',
+    'Next Cash & Carry'
+]
+
+export const bakingDealers = [
+    {
+        state: 'Abia State',
+        stores: [
+            { name: 'KC OKEKE', address: 'TENANT ROAD, ABA' },
+            { name: 'ANCO TRADING STORES', address: 'TENANT ROAD, ABA' },
+            { name: 'TEN TEN', address: 'TENANT ROAD, ABA' },
+            { name: 'LYNFRAN VENTURES', address: 'ARIAARIA MARKET, ABA' }
+        ]
+    },
+    {
+        state: 'Lagos State',
+        stores: [
+            { name: 'PAYLESS BAKERS', address: 'OJOTA, LAGOS' },
+            { name: 'EL-ELLA SUPERSTORE', address: 'SATELLITE TOWN, LAGOS' },
+            { name: 'STEVE BECO', address: 'AGEGE MARKET, LAGOS' },
+            { name: 'TIM BAZAAR', address: 'SANGOTEDO, LAGOS' },
+            { name: 'AMAKA OKEKE STORES', address: 'TRADE FAIR, LAGOS' },
+            { name: 'IRIS ENTERPRISES', address: 'OGBA, LAGOS' },
+            { name: 'DASFATKAM', address: 'GBAGADA, LAGOS' },
+            { name: 'ONYINYE STORES', address: 'BOUNDARY MARKET, LAGOS' }
+        ]
+    },
+    {
+        state: 'Rivers State',
+        stores: [
+            { name: 'GIANT BAKE LTD', address: 'RUMUOKORO, PORT HARCOURT' },
+            { name: 'IK RESOURCES', address: 'WOJI, PORT HARCOURT' },
+            { name: 'JOVEE BAKERS', address: 'PORT HARCOURT' },
+            { name: 'RITORIA RESOURCES', address: 'WOJI, PORT HARCOURT' }
+        ]
+    },
+    {
+        state: 'Anambra State',
+        stores: [
+            { name: 'ALL SAINTS', address: 'AMOBI OCHANJA MARKET, ONITSHA' },
+            { name: 'E.C OBIEKWE', address: 'OGIDI, ONITSHA' },
+            { name: 'ANYITEX ONITSHA', address: 'OGIDI, ONITSHA' },
+            { name: 'CHYBYKE ENT ONITSHA', address: 'OGIDI, ONITSHA' },
+            { name: 'PRIME MASTERS GLOBAL VENTURES LTD', address: 'ONITSHA' },
+            { name: 'BLESSED ODINZ GLOBAL LTD', address: 'ODOAKPU, ONITSHA' }
+        ]
+    },
+    {
+        state: 'Oyo State',
+        stores: [
+            { name: 'MJB CATERING SERVICE', address: 'AGBENI MARKET, IBADAN' },
+            { name: 'NGOZI STORES - IBADAN', address: 'AGBENI MARKET, IBADAN' },
+            { name: 'TAIWO BAKING MATERIALS', address: 'AGBENI MARKET, IBADAN' }
+        ]
+    },
+    {
+        state: 'Edo State',
+        stores: [
+            { name: 'OKENWA UGOCHUKWU HENRY NIGERIA ENTERPRISES', address: 'FORESTRY ROAD, BENIN' },
+            { name: 'ST MIKE\'S STANDARD BAKERY ENT.', address: 'MISSION ROAD, BENIN' },
+            { name: 'CHILAX LINUS', address: 'ADOLOR JUNCTION, BENIN' },
+            { name: 'BLESSED JANE GOLD', address: 'AKPAKPAVA, BENIN' }
+        ]
+    },
+    {
+        state: 'Akwa Ibom State',
+        stores: [
+            { name: 'ELKENZ CONCEPT', address: 'ORON ROAD, UYO' },
+            { name: 'OKEY KINGS BAKERS', address: 'UYO' }
+        ]
+    },
+    {
+        state: 'Ogun State',
+        stores: [
+            { name: 'ROYAL GATE COMMERCIAL COMPANY', address: 'IJEBU ODE, OGUN STATE' }
+        ]
+    },
+    {
+        state: 'Plateau State',
+        stores: [
+            { name: 'CHIKOTEX VENTURES', address: 'ABUJA MARKET, JOS' },
+            { name: 'MUBARAK HAMZA', address: 'JOS' }
+        ]
+    },
+    {
+        state: 'Cross River State',
+        stores: [
+            { name: 'MAXIMUM BAKING ENTERPRISES', address: 'CALABAR' }
+        ]
+    },
+    {
+        state: 'Cameroon',
+        stores: [
+            { name: 'KARRAYS CAKE & CAKE ACCESSORIES', address: 'OIC MARKET BUEA, CAMEROUN' },
+            { name: 'ETS PRO-ACTIVE MEGA SERVICES (CYNDY CAKES & PASTRIES)', address: 'YAOUNDE, CAMEROUN' }
+        ]
+    },
+   
+    {
+        state: 'Ekiti State',
+        stores: [
+            { name: 'CLIFF BEST INT NIG LTD', address: 'DALIMORE, ADO EKITI' },
+            { name: 'IRE AKARI VENTURE', address: 'IWOROKO, ADO EKITI' },
+            { name: 'VALENTINE CHIMEZIE', address: 'OJA-OBA, ADO EKITI' }
+        ]
+    },
+    {
+        state: 'Enugu State',
+        stores: [
+            { name: 'SYLVANUS NNAJI', address: 'OGBETE MAIN MARKET, ENUGU' },
+            { name: 'OKENWA ALOY', address: 'OGBETE MAIN MARKET, ENUGU' },
+            { name: 'SUNWILTON BASE', address: 'OGBETE MAIN MARKET, ENUGU' }
+        ]
+    },
+    {
+        state: 'Federal Capital Territory',
+        stores: [
+            { name: 'WISDOM CAKES LOKOJA', address: 'ABUJA' },
+            { name: 'UNIC MARX LIMITED', address: 'WUSE MARKET, ABUJA' },
+            { name: 'ELIVAREE GS LTD', address: 'GARKI II, ABUJA' }
+        ]
+    },
+    {
+        state: 'Ondo State',
+        stores: [
+            { name: 'BAKE N COOK', address: 'ARAKALE, AKURE' },
+            { name: 'SIMPLY AMAZING CAKES & PASTRIES', address: 'AKURE' }
+        ]
+    },
+    {
+        state: 'Bayelsa State',
+        stores: [
+            { name: 'IC OTU ICHE ENTERPRISES', address: 'BAYELSA' }
+        ]
+    },
+    {
+        state: 'Imo State',
+        stores: [
+            { name: 'NDICO INTEGRATED GLOBAL ENTERPRISES', address: 'NEKEDE, OWERRI' },
+            { name: 'ODINAKA ENTERPRISES', address: 'NAZE, OWERRI' }
+        ]
+    },
+    {
+        state: 'Delta State',
+        stores: [
+            { name: 'BLESSED REMMY INTERNATIONAL', address: 'IGBUDU MARKET, WARRI' },
+            { name: 'PAT APOS', address: 'EFFURUN MARKET, WARRI' }
+        ]
+    }
+];
+
+export const breakfastDealers = [
+    {
+        state: 'Oyo State',
+        stores: [
+            { name: 'MJB CATERING SERVICE', address: 'AGBENI MARKET, IBADAN' },
+            { name: 'NGOZI STORES - IBADAN', address: 'AGBENI MARKET, IBADAN' },
+            { name: 'DHKRULAH STORES', address: 'AGBAJE MARKET, IBADAN' },
+            { name: 'MAMA MUSE', address: 'AGBAJE MARKET, IBADAN' },
+            { name: 'INUNMIDUN STORES', address: 'GBAGI MARKET, IBADAN' }
+        ]
+    },
+    {
+        state: 'Abia State',
+        stores: [
+            { name: 'KC OKEKE', address: 'TENANT ROAD, ABA' },
+            { name: 'MR MBAEZE IKECHUKWU GEOFFERY', address: 'CEMENTARY MARKET, ABA' },
+            { name: 'MR CELESTINE IZUAKOBI', address: 'CEMENTARY MARKET, ABA' }
+        ]
+    },
+    {
+        state: 'Lagos State',
+        stores: [
+            { name: 'MUMMY DAMMY STORES', address: 'OKE ARIN MARKET, LAGOS' },
+            { name: 'MAYOR INVESTMENT', address: 'IYANA IPAJA, LAGOS' },
+            { name: 'ALHAJA OLASHEU STORE', address: 'OKE ARIN MARKET, LAGOS' },
+            { name: 'SERALITE OYIN VENTURE', address: 'OKOKOMAIKO, LAGOS' },
+            { name: 'COMFORT STORE', address: 'CEMENT BUS/STOP, AGEGE' },
+            { name: 'EKIOMADO O. ENTERPRISES', address: 'ONIWAYA MARKET, AGEGE, LAGOS' },
+            { name: 'PILGRIMS\' PROGRESS STORES', address: 'OJUWOYE, MUSHIN, LAGOS' },
+            { name: 'OLAOYEKAN NIG ENT', address: 'OKE ARIN MARKET, LAGOS' },
+            { name: 'EFUA INVESTMENT', address: 'ONIWAYA MARKET, AGEGE, LAGOS' },
+            { name: 'AMICABLE STORES', address: 'IKOTUN MARKET, LAGOS' },
+            { name: 'FRANLICE VENTURES', address: 'MILE 12, IKORODU, LAGOS' },
+            { name: 'NDUNSE GLOBAL VENTURE', address: 'IBEJU LEKKI, LAGOS' },
+            { name: 'HILASTEL RESOURCES LTD', address: 'TRADE FAIR, LAGOS' }
+        ]
+    },
+    {
+        state: 'Ogun State',
+        stores: [
+            { name: 'HASSIBUNALLAH ENTERPRISES', address: 'SANGO OTA MARKET' },
+            { name: 'OLAFATHIA VENTURES', address: 'IJOKO, OGUN STATE' },
+            { name: 'NABBY\'S TREATS', address: 'EWUPE, OGUN STATE' },
+            { name: 'OPEYEMI & KAY VENTURES', address: 'SANGO OTA MARKET' },
+            { name: 'ABFAT BUSINESS VENTURES', address: 'KUTO, ABEOKUTA' }
+        ]
+    },
+    {
+        state: 'Akwa Ibom State',
+        stores: [
+            { name: 'ELKENZ CONCEPT', address: 'UYO' },
+            { name: 'ANIEDO GREEN INTEGRATED SERVICES', address: 'UYO' }
+        ]
+    },
+    {
+        state: 'Edo State',
+        stores: [
+            { name: 'OKENWA UGOCHUKWU HENRY NIGERIA ENTERPRISES', address: 'FORESTRY ROAD, BENIN' }
+        ]
+    },
+    {
+        state: 'Rivers State',
+        stores: [
+            { name: 'ESOLUX NIG LTD', address: 'MILE 1, DIOBU, PORT HARCOURT' },
+            { name: 'SOMIARI CONCEPT NIG. LTD', address: 'ABULOMA, PORT HARCOURT' }
+        ]
+    },
+    {
+        state: 'Anambra State',
+        stores: [
+            { name: 'E.DINAS VENTURES', address: 'AGBARU MARKET, ONITSHA' }
+        ]
+    },
+    {
+        state: 'Adamawa State',
+        stores: [
+            { name: 'HYGINUS ASOMBA VENTURES', address: 'JIMETA, YOLA' }
+        ]
+    },
+    {
+        state: 'Imo State',
+        stores: [
+            { name: 'ODINAKA ENTERPRISES', address: 'NAZE, OWERRI' },
+            { name: 'VICKYBABS ENTERPRISES', address: 'NAZE, OWERRI' },
+            { name: 'OZIM\'S INTEGRATED SERVICES', address: 'NEKEDE, OWERRI' }
+        ]
+    },
+    {
+        state: 'Cross River State',
+        stores: [
+            { name: 'WARAFAA OJULARI ENTERPRISES', address: 'BADAGRY MARKET' }
+        ]
+    },
+    {
+        state: 'Bauchi State',
+        stores: [
+            { name: 'BABANGIDA UMAR TRADING', address: 'BAUCHI' }
+        ]
+    }
+];
